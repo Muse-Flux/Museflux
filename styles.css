@@ -23,45 +23,32 @@ body {
 .navbar-nav .nav-item .nav-link:hover {
     color: red; /* Red color on hover */
 }
-.icons-container i {
-    font-size: 4rem; /* Adjust the value to your preference */
-    margin: 0 1rem;
-    color: #f06292;
-    padding: 0.9rem;
-    transform: scale(1.5); /* Adjust the scale factor as needed */
-  }
-/* Rotating animation */
-.rotating {
-    animation: rotation 2s infinite linear;
-  }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* Pulsing animation */
-  .pulsing {
-    animation: pulse 1.5s infinite;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .salon-info {
+
+.countdown {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 25%;
+}
+.rounded {
+    margin-bottom: 20px; /* Adjust the value for the desired padding */
+    padding-bottom: 20px;
+    box-sizing: border-box; 
+}
+/* .countdown span {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 3rem;
+    margin-left: 0.8rem;
+} */
+
+.bg-gradient-4 {
+    background: #007991;
+    background: -webkit-linear-gradient(to right, #007991, #78ffd6);
+    background: linear-gradient(to right, #007991, #78ffd6);
+    /* padding-top: 20px; Added padding for spacing */
+}
+
+.salon-info {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -69,7 +56,7 @@ body {
     max-width: 100%;
     text-align: center;
   }
-  .salon-info h1 {
+.salon-info h1 {
     font-family: sofia;
     font-size: 2.5em;
     color: #333;
@@ -77,11 +64,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  .salon-info p {
+.salon-info p {
     font-size: 1.1em;
     color: #666;
     line-height: 1.6;
-  }
+}
 
 .signature-facial {
     background-color: #f9f9f9;
@@ -214,6 +201,12 @@ body {
 .pricing-factor p {
     color: #495057;
 }
+
+.profit-margin {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
 .heading{
     text-decoration: #17a2b8;
     text-align: center;
