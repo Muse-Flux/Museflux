@@ -2,7 +2,7 @@
  var countDownDate = new Date("August 05, 2024 23:59:59").getTime();
 
  // Update the count down every 1 second
- var countdownfunction = setInterval(function() {
+ var countdown_function = setInterval(function() {
 
      // Get today's date and time
      var now = new Date().getTime();
@@ -22,7 +22,7 @@
      
      // If the count down is over, write some text 
      if (distance < 0) {
-         clearInterval(countdownfunction);
+         clearInterval(countdown_function);
          document.getElementById("clock-c").innerHTML = "EXPIRED";
      }
  }, 1000);
